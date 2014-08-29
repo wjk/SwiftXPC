@@ -28,6 +28,7 @@
 		1F46AD5F19884346001E32C4 /* TransportErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46AD4D19884346001E32C4 /* TransportErrors.swift */; };
 		5511F05D19B108330033A252 /* Generators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5511F05C19B108330033A252 /* Generators.swift */; };
 		55C7DE7319B10B380017788A /* StringLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7DE7219B10B380017788A /* StringLiteral.swift */; };
+		55C7DE7519B112B70017788A /* BoolType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C7DE7419B112B70017788A /* BoolType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		1F46AD4D19884346001E32C4 /* TransportErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportErrors.swift; sourceTree = "<group>"; };
 		5511F05C19B108330033A252 /* Generators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generators.swift; sourceTree = "<group>"; };
 		55C7DE7219B10B380017788A /* StringLiteral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringLiteral.swift; sourceTree = "<group>"; };
+		55C7DE7419B112B70017788A /* BoolType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		1F46AD4619884346001E32C4 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				55C7DE7419B112B70017788A /* BoolType.swift */,
 				1F46AD4719884346001E32C4 /* Extensions.swift */,
 				5511F05C19B108330033A252 /* Generators.swift */,
 				55C7DE7219B10B380017788A /* StringLiteral.swift */,
@@ -239,6 +242,7 @@
 				1F46AD5819884346001E32C4 /* String.swift in Sources */,
 				1F46AD5019884346001E32C4 /* Array.swift in Sources */,
 				1F46AD5219884346001E32C4 /* Date.swift in Sources */,
+				55C7DE7519B112B70017788A /* BoolType.swift in Sources */,
 				1F46AD5719884346001E32C4 /* SharedMemoryRegion.swift in Sources */,
 				1F46AD5D19884346001E32C4 /* Connection.swift in Sources */,
 				1F46AD4E19884346001E32C4 /* Object.swift in Sources */,
