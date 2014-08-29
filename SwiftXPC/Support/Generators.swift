@@ -18,7 +18,11 @@ public struct XPCArrayGenerator: GeneratorType {
 	}
 	
 	mutating public func next() -> XPCObject? {
-		return nil
+		if status >= theArray.count {
+			return nil
+		} else {
+			return theArray[status++]
+		}
 	}
 }
 
