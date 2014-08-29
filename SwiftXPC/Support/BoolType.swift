@@ -10,11 +10,11 @@ import Foundation
 import XPC
 
 extension XPCBool: BooleanLiteralConvertible, BooleanType {
-	public class func convertFromBooleanLiteral(value: Bool) -> XPCBool {
+    public class func convertFromBooleanLiteral(value: Bool) -> XPCBool {
         return XPCBool(value: value)
-	}
-	
-	public var boolValue: Bool {
+    }
+    
+    public var boolValue: Bool {
     get {
         return value
     }
