@@ -74,6 +74,7 @@
 				1F46AD19198842DA001E32C4 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		1F46AD19198842DA001E32C4 /* Products */ = {
 			isa = PBXGroup;
