@@ -26,6 +26,7 @@
 		1F46AD5D19884346001E32C4 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46AD4B19884346001E32C4 /* Connection.swift */; };
 		1F46AD5E19884346001E32C4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46AD4C19884346001E32C4 /* Service.swift */; };
 		1F46AD5F19884346001E32C4 /* TransportErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46AD4D19884346001E32C4 /* TransportErrors.swift */; };
+		5511F05D19B108330033A252 /* Generators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5511F05C19B108330033A252 /* Generators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		1F46AD4B19884346001E32C4 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		1F46AD4C19884346001E32C4 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		1F46AD4D19884346001E32C4 /* TransportErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportErrors.swift; sourceTree = "<group>"; };
+		5511F05C19B108330033A252 /* Generators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1F46AD4719884346001E32C4 /* Extensions.swift */,
+				5511F05C19B108330033A252 /* Generators.swift */,
 				1F46AD4819884346001E32C4 /* SwiftXPCShims.h */,
 				1F46AD4919884346001E32C4 /* SwiftXPCShims.m */,
 			);
@@ -236,6 +239,7 @@
 				1F46AD5D19884346001E32C4 /* Connection.swift in Sources */,
 				1F46AD4E19884346001E32C4 /* Object.swift in Sources */,
 				1F46AD5E19884346001E32C4 /* Service.swift in Sources */,
+				5511F05D19B108330033A252 /* Generators.swift in Sources */,
 				1F46AD5619884346001E32C4 /* Scalar.swift in Sources */,
 				1F46AD5A19884346001E32C4 /* Extensions.swift in Sources */,
 				1F46AD4F19884346001E32C4 /* Type.swift in Sources */,
@@ -382,6 +386,7 @@
 				1F46AD30198842DA001E32C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
