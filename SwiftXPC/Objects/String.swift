@@ -9,7 +9,7 @@
 import Foundation
 import XPC
 
-public final class XPCString : XPCObject {
+public final class XPCString : XPCObject, StringLiteralConvertible {
     public convenience init(string contents: String) {
         self.init(string: contents, encoding: NSUTF8StringEncoding)
     }
@@ -33,5 +33,14 @@ public final class XPCString : XPCObject {
     get {
         return String.fromCString(xpc_string_get_string_ptr(objectPointer))
     }
+    }
+    
+    public class func convertFromStringLiteral(value: String) -> XPCString {
+        return XPCString(string: value)
+    }
+    
+    public class func convertFromExtendedGraphemeClusterLiteral(value: String) -> XPCString {
+        let outString = String.convertFromExtendedGraphemeClusterLiteral(value)
+        return XPCString(string: outString)
     }
 }

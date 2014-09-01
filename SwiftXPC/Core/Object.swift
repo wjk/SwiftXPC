@@ -16,8 +16,10 @@ public class XPCObject : Hashable, Printable {
         objectPointer = nativePointer
     }
     
-    public func type() -> XPCObjectType {
+    public var XPCType: XPCObjectType {
+    get {
         return XPCObjectType(nativePointer: xpc_get_type(objectPointer))
+    }
     }
     
     public func copy() -> XPCObject? {

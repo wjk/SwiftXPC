@@ -15,7 +15,7 @@ public final class XPCNull : XPCObject {
     }
 }
 
-public final class XPCBool : XPCObject {
+public final class XPCBool : XPCObject, BooleanLiteralConvertible, BooleanType {
     public convenience init(value: Bool) {
         self.init(nativePointer: xpc_bool_create(value))
     }
@@ -25,11 +25,25 @@ public final class XPCBool : XPCObject {
         return xpc_bool_get_value(objectPointer)
     }
     }
+    
+    public class func convertFromBooleanLiteral(value: Bool) -> XPCBool {
+        return XPCBool(value: value)
+    }
+    
+    public var boolValue: Bool {
+    get {
+        return value
+    }
+    }
 }
 
 public final class XPCInt : XPCObject {
     public convenience init(value: Int) {
         self.init(nativePointer: xpc_int64_create(Int64(value)))
+    }
+    
+    public convenience init(value: Int64) {
+        self.init(nativePointer: xpc_int64_create(value))
     }
     
     public var value: Int {
@@ -42,6 +56,10 @@ public final class XPCInt : XPCObject {
 public final class XPCUInt : XPCObject {
     public convenience init(value: UInt) {
         self.init(nativePointer: xpc_uint64_create(UInt64(value)))
+    }
+    
+    public convenience init(value: UInt64) {
+        self.init(nativePointer: xpc_uint64_create(value))
     }
     
     public var value: UInt {
